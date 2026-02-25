@@ -9,6 +9,17 @@ public class HelloController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok("Hej Simon, din backend fungerar.");
+        return Ok("rot");
+    }
+}
+
+[ApiController]
+[Route("api/[controller]")]
+public class SimonController : ControllerBase
+{
+    [HttpGet]
+    public IActionResult Get()
+    {
+        return Ok("rot");
     }
 }
